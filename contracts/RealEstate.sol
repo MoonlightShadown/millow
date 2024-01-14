@@ -22,6 +22,7 @@ contract RealEstate is ERC721URIStorage {
     }
 
     function totalSupply() public view returns (uint256) {
+        // transfer nft from seller to this contract
         return _tokenIds.current();
     }
 }
